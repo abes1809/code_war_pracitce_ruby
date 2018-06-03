@@ -1,0 +1,14 @@
+def getCount(inputStr)
+  vowels = ["a","e","i","o","u"];
+  number = 0;
+  vowels.each do |vowel|
+   inputStr.length.times do |letter|
+      if inputStr[letter] == vowel
+        number += 1;
+      end
+    end 
+  end   
+  number 
+end
+
+puts getCount("abracadabra")

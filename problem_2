@@ -1,0 +1,34 @@
+def find_next_square(sq)
+  # Return the next square if sq is a perfect square, -1 otherwise
+  square? = false
+
+  half = sq % 2
+
+  if half * half == sq 
+  	square? = true  
+  else
+ 	 square? = false 
+  end 
+
+ if square? == true 
+ 	new_square = sq 
+ 	find_next == false 
+
+ 	while find_next == false 
+ 		new_square = new_square + 1 
+ 		if (new_square % 2) * (new_square % 2) == new_square
+ 			answer = new_square
+ 			new_square = true 
+ 		end 
+ 	end 
+ end 
+
+ if square? == true 
+ 	answer 
+ else
+ 	-1 
+ end 
+ 
+end
+
+print find_next_square(121)

@@ -1,0 +1,28 @@
+# Create a function named divisors/Divisors that takes an integer and returns an array with all of the integer's divisors(except for 1 
+# and the number itself). If the number is prime return the string '(integer) is prime' 
+# (null in C#) (use Either String a in Haskell and Result<Vec<u32>, String> in Rust).
+def divisors(n)
+	multiples = [];
+	done = false;
+	test = 2;
+	stop = n - 1;
+
+	while done == false 
+		if n % test == 0 
+			multiples << test 
+		end
+		if stop < test
+			done = true 
+		end  
+	test += 1 
+	puts test
+	end 
+	if multiples.length == nil 
+		"#{n} is prime"
+	else 
+		multiples
+	end
+end 
+
+puts divisors(14)
+puts divisors(13)
